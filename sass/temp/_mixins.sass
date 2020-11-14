@@ -1,0 +1,27 @@
+@function rem($px)
+    @return $px / 16px + 0rem 
+
+=flex($main: null, $cross: null)
+    display: flex
+    justify-content: $main
+    align-items: $cross
+=media($size)
+    @media screen and (min-width: $size)
+      @content
+.btn
+    text-decoration: none
+    box-sizing: border-box
+    padding: 12px 20px
+    border: 1px solid black
+    border-radius: rem(25px)
+.link--reset
+    text-decoration: none
+.hide
+    display: none
+    visibility: hidden
+    height: 0
+.list--reset
+    list-style-type: none
+    margin: 0
+    padding: 0
+

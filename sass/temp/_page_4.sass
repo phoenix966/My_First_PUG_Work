@@ -1,0 +1,56 @@
+.info--position
+    position: relative
+    z-index: -2
+.data
+
+    &__box
+        height: 513px
+        overflow: hidden
+    &__img
+        width: 100%
+    &__title
+        font-family: var(--font-thin)
+        font-size: rem(35px)
+        font-weight: 300
+        color: var(--color-gray)
+        padding: 0
+        +media(728px)
+            padding: 0 rem(150px)
+    &__text
+        font-family: var(--font-thin)
+        font-size: rem(21px)
+        font-weight: 300
+        color: var(--color-gray)
+        margin: rem(50px) 0
+        +media(728px)
+            padding: 0 rem(150px)
+    &__text b
+        color: var(--color-accent)
+.data__container
+    transform: translateY(-200px)
+    margin: 0 auto
+    background: white
+    max-width: 936px
+.data__title--big
+    font-size: rem(48px)
+.data__col--margin
+    margin: rem(75px) 0
+    padding: 0
+.data__text--border
+    border-left: 1px solid var(--color-accent)
+    color: var(--color-accent)
+.data__list
+    +media(728px)
+        padding: 0 150px
+.data__col--flex
+    +media(728px)
+        +flex(space-between,center)
+        padding: 0 rem(150px)
+        flex-wrap: wrap
+.color--gray
+    color: var(--color-gray)
+    border-color: var(--color-gray)
+.logos__btn--margin
+    margin-left: 10px
+    +media(568px)
+        margin-left: 30px

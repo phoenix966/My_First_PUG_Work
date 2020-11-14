@@ -1,0 +1,20 @@
+.footer
+    &__container
+        +flex(center,center)
+        flex-direction: column
+        +media(650px)
+            flex-direction: row
+    &__nav
+        +flex(space-evenly,center)
+        flex-direction: column
+        +media(650px)
+            flex-direction: row
+    &__link
+        font-size: rem(19px)
+        color: var(--color-gray)
+        border-bottom: 1px solid white
+        +media(650px)
+            margin-left: 20px
+        &:hover
+            border-color: var(--color-accent)
+
